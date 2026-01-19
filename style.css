@@ -24,12 +24,52 @@
     border-radius: 20px;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 
+.nav-container,
+.about-section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bg-color2{
+    background-color: #1A0B2E;
+}
+.humber{
+    display:none;
+}
+
+.hedding{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.had-h2{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 /* header related style */
 
 /* nav style */
-
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 10px;
+}
+.links{
+    display: flex;
+    gap: 32px;
+}
+.links .item{
+    list-style: none;
+    
+}
+.links .link{
+    text-decoration: none;
+    color: #fff;
+}
 
 /* banner style */
 
@@ -62,6 +102,9 @@
     /* margin-top: 12px; */
     padding: 8px 16px;
     border-radius: 16px;
+    color:#000;
+    font-size: 1.2rem;
+    font-weight: 600;
     box-shadow: 0 3px 27px rgba(0, 255, 136, 0.5);
 }
 .mick{
@@ -84,16 +127,60 @@ font-weight: 800;
     margin-left: 8px;
 }
 
-
-
-
-
+/* about related style */
+.about-section{
+    padding: 50px 0 100px;
+}
+.about{
+    background-color: #1A0B2E;
+}
+.hedding>p{
+    line-height: 30px;
+}
+hr{
+    margin: 80px 0;
+    border: 1px solid #FFFFFF;
+}
+.about-box{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    gap: 80px;
+}
+.about-card{
+    max-width: 240px;
+    text-align: center;
+}
+.about-card>h3{
+    font-size:3rem;
+    font-weight: bold;
+    color: #00FF88;
+    margin-bottom: 16px;
+}
+/*  Why Choose Section */
+.choose{
+    background: rgba(35, 14, 61, 1);
+    padding: 100px 0;
+}
+.choose>h2{
+    margin-bottom: 40px;
+}
 
 
 
 /* responsive mobile style */
 @media screen and (max-width:576px) {
-
+    /* nav section */
+    .humber{
+        display: inline;
+    }
+    .nav-btn,
+    .links{
+        display: none;
+    }
+    
     /* banner section */
     .banner{
         padding-top: 100px;
@@ -114,5 +201,13 @@ font-weight: 800;
     margin-left: 130px;
    
     padding: 8px 16px;
+}
+.about-box{
+    
+    margin: 0 auto;
+   
+    grid-template-columns: repeat(2,1fr);
+    
+    gap: 80px;
 }
 }
