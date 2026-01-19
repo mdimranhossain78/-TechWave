@@ -253,4 +253,15 @@ hr{
     
     gap: 80px;
 }
+.chooese-container{
+    grid-template-areas: 
+    
+    "audio  audio  audio "
+    "mobile mobile  mobile"
+    " global  global  global"
+    "intervew  intervew intervew"
+    "rice  rice  rice"
+    ;
+    
+}
 }
