@@ -28,7 +28,8 @@
 }
 
 .nav-container,
-.about-section{
+.about-section,
+.chooese-container{
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -166,6 +167,48 @@ hr{
 }
 .choose>h2{
     margin-bottom: 40px;
+}
+.chooese-container>*{
+     align-content: center;
+     padding: 40px;
+     background-color: rgba(53, 17, 101, 0.4);
+     border-radius: 40px;
+}
+.chooese-container>*>img{
+    margin-bottom: 16px;
+}
+.chooese-container>*>h3{
+ font-size: 1.5rem;
+ font-weight: bold;
+ margin-bottom: 16px;
+}
+.audio{
+    grid-area: audio;
+}
+.mobile{
+    grid-area: mobile;
+}
+.global{
+    grid-area: global;
+}
+.intervew{
+    grid-area: intervew;
+}
+.rice{
+    grid-area: rice;
+}
+
+.chooese-container{
+
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    
+    "audio  mobile   mobile  "
+    "audio  global   global"
+    "intervew  intervew rice"
+    ;
+
 }
 
 
