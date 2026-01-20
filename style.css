@@ -171,7 +171,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     
-    gap: 80px;
+    /* gap: 55px; */
 }
 .about-card{
     max-width: 240px;
